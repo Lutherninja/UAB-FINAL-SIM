@@ -1,0 +1,6 @@
+This is an example of the dialogue system.
+Every new line is a new line of dialogue.
+using the carrot symbol (shift 6) and then a number will indicate to the script that it needs to perform the event at the index of the number after the carrot.
+^0
+using the asterisk will call the event onChoiceSelection within the Dialogue_System script.
+*

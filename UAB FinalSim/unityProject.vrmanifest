@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.uabfinalsim.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\Render\\Desktop\\UAB2020 (latest)\\UAB-FINAL-SIM\\UAB FinalSim\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "UAB FinalSim [Testing]"
+        }
+      }
+    }
+  ]
+}
