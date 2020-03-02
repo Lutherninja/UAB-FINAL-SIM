@@ -1,1 +1,0 @@
-This is the dialogue which runs once the timer runs out.
