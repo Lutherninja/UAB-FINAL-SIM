@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Trans_White_Man_Anims.ma
-//Last modified: Mon, Mar 02, 2020 01:13:45 PM
+//Last modified: Wed, Mar 04, 2020 12:57:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "White_Trans_Man_cleanedUP_V2" -rfn "White_Trans_Man_cleanedUP_V2RN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V2/White Trans Man cleanedUP_V2.ma";
@@ -23,15 +23,15 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "44811F98-4616-F5ED-EF63-A0B37E545A50";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 218.21390467855849 131.99534397539441 -11.637058236844709 ;
-	setAttr ".r" -type "double3" -3.9383527283398281 -271.39999999997207 -1.6272365595356935e-14 ;
+	setAttr ".t" -type "double3" -74.894366152602373 131.23288563717466 13.17045736635942 ;
+	setAttr ".r" -type "double3" -9.3383527285944368 -280.6000000001381 0 ;
 	setAttr ".rp" -type "double3" -5.6843418860808015e-14 1.7479351299698465e-12 0 ;
 	setAttr ".rpt" -type "double3" 4.2599877956648912e-14 -4.4377387521352164e-14 -3.9521707014853258e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F9297811-477A-7CE3-C825-44932FFD8C79";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 396.3078243844185;
+	setAttr ".coi" 142.8493071593881;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -92,29 +92,30 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "28919BC3-4424-BCF2-E4A6-E9A699AF9580";
-	setAttr -s 29 ".lnk";
-	setAttr -s 29 ".slnk";
+	rename -uid "53239EA1-4CE5-EAAD-3FE4-B4ADB07B80EB";
+	setAttr -s 69 ".lnk";
+	setAttr -s 69 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "601FA823-4DB9-E699-C7A7-13A3D2D95D0E";
+	rename -uid "BEEC4D77-475B-04A4-899A-34B431FBA079";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C44EBF1F-46E0-754F-E25D-F9BDCD9A02FC";
+	rename -uid "FA7D6AE9-4B94-F9D5-0084-B8AACE32CD74";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "17B4E483-48EB-358A-7B88-CD8ED6D8B2E1";
+	rename -uid "438343CB-418E-E206-04DC-1A97863B0C84";
 	setAttr ".cdl" 1;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "85C37F2B-46EE-B240-4CAC-CB989B1596B2";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B7A13256-4E35-78CC-04EF-2EB2D9B878AD";
+	rename -uid "EF182089-4B2D-DE66-5E7A-FBB5D0B96F1F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "015AF671-4106-A7EE-70CC-3883FD523479";
 	setAttr ".g" yes;
 createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 	rename -uid "D03C1A59-4CE7-9F51-21DD-B7BA59AF0EA1";
-	setAttr -s 283 ".phl";
+	setAttr ".fn[0]" -type "string" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V2/White Trans Man cleanedUP_V2.ma";
+	setAttr -s 293 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -398,10 +399,20 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 	setAttr ".phl[281]" 0;
 	setAttr ".phl[282]" 0;
 	setAttr ".phl[283]" 0;
+	setAttr ".phl[284]" 0;
+	setAttr ".phl[285]" 0;
+	setAttr ".phl[286]" 0;
+	setAttr ".phl[287]" 0;
+	setAttr ".phl[288]" 0;
+	setAttr ".phl[289]" 0;
+	setAttr ".phl[290]" 0;
+	setAttr ".phl[291]" 0;
+	setAttr ".phl[292]" 0;
+	setAttr ".phl[293]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"White_Trans_Man_cleanedUP_V2RN"
 		"White_Trans_Man_cleanedUP_V2RN" 0
-		"White_Trans_Man_cleanedUP_V2RN" 379
+		"White_Trans_Man_cleanedUP_V2RN" 398
 		1 |White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL 
 		"blendParent1" "blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Body_Old|White_Trans_Man_cleanedUP_V2:Body_OldShape" 
@@ -432,6 +443,14 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"rotateY" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL" 
 		"rotateZ" " -av"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL" 
+		"rotate" " -type \"double3\" 17.81472020155470659 0 0"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL" 
+		"rotateX" " -av"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL" 
+		"rotateY" " -av"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL" 
+		"rotateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL" 
@@ -454,13 +473,14 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
-		"rotate" " -type \"double3\" 0 -11.50307759055403167 9.77202358019260764"
-		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" -13.03231507251047283 7.70034593045820692 -5.34525349042313636"
+		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"rotateY" " -av"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
+		"rotateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
@@ -478,7 +498,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL|White_Trans_Man_cleanedUP_V2:Jaw_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Jaw_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL|White_Trans_Man_cleanedUP_V2:Jaw_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Jaw_CTRL" 
-		"rotate" " -type \"double3\" -1.52569257268051661 0 0"
+		"rotate" " -type \"double3\" 24.30009217996242299 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL|White_Trans_Man_cleanedUP_V2:Jaw_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Jaw_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL|White_Trans_Man_cleanedUP_V2:Jaw_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Jaw_CTRL" 
@@ -506,7 +526,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
-		"translate" " -type \"double3\" 0.0081967079409796667 -0.35310446904305159 -0.63038792271329469"
+		"translate" " -type \"double3\" 0.054399112068103307 -0.24724689252587856 -0.63038792271329469"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
 		"translateX" " -av"
@@ -525,13 +545,15 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"rotateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
 		"blendParent1" " -k 1"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL|White_Trans_Man_cleanedUP_V2:Right_Eye_CTRL" 
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"translate" " -type \"double3\" -190.41309572950791562 -23.62065377963341462 8.87167930151970907"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"rotate" " -type \"double3\" 0 74.99999999999997158 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_Mouth_up_down_cntl" 
-		"translateY" " -0.44382745335528284"
+		"translateY" " 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_wide_pucker" 
 		"visibility" " 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_wide_pucker" 
@@ -540,20 +562,28 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"translateX" " -av -0.11713081945738363"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_Mouth_up_down_cntl" 
 		"translateY" " -av 0.033733486061468088"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL" 
+		"visibility" " -av 1"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL" 
+		"translateY" " -av -0.81033065673642313"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_blink_CNTL" 
-		"translateY" " 0"
+		"visibility" " -av 1"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_blink_CNTL" 
+		"translateY" " -av -0.81033065673642313"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:M_cntl" 
 		"translateX" " 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_outter_eyebrow_CNTL" 
 		"translateY" " 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_inner_eyebrow_CNTL" 
-		"translateY" " 0"
+		"translateY" " -av -0.10015543327267805"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:upper_Lip_CNTL" 
 		"translateY" " 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:lower_Lip_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_inner_eyebrow_CNTL" 
-		"translateY" " 0"
+		"translateY" " -av -0.10015543327267805"
+		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eyebrowcntls_grp|White_Trans_Man_cleanedUP_V2:R_outter_eyebrow_CNTL" 
+		"translateY" " -av 0"
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "displayType" " 0"
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "visibility" " 1"
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "hideOnPlayback" " 0"
@@ -561,28 +591,6 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "color" " 0"
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "overrideColorRGB" " -type \"float3\" 0 0 0"
 		
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.instObjGroups" 
-		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.instObjGroups" 
-		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShapeOrig.worldMesh" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.inMesh" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShapeOrig.worldMesh" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.inMesh" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateX" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateX" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateY" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateY" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateZ" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateZ" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateX" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateX" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateY" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateY" 
-		""
-		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateZ" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateZ" 
-		""
 		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL_parentConstraint1.constraintTranslateX" 
 		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.translateX" 
 		""
@@ -600,6 +608,28 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		""
 		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL_parentConstraint1.constraintRotateZ" 
 		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.rotateZ" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShapeOrig.worldMesh" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.inMesh" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShapeOrig.worldMesh" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.inMesh" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.instObjGroups" 
+		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.instObjGroups" 
+		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateX" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateX" 
+		""
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateY" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateY" 
+		""
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outTranslateZ" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateZ" 
+		""
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateX" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateX" 
+		""
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateY" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateY" 
+		""
+		3 "White_Trans_Man_cleanedUP_V2:pairBlend1.outRotateZ" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rotateZ" 
 		""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Shirt.drawOverride" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1]" ""
@@ -757,11 +787,11 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[76]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.translateZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[77]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[78]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[79]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[78]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.rotateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[79]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.rotateZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[80]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL.scaleX" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[81]" ""
@@ -1137,11 +1167,11 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[266]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.rotateZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[267]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[268]" ""
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.blendParent1" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[269]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[268]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.blendParent1" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[269]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.visibility" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[270]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.scaleX" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[271]" ""
@@ -1174,7 +1204,27 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_Mouth_up_down_cntl.translateY" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[282]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_Mouth_up_down_cntl.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[283]" "";
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[283]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL.translateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[284]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[285]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_blink_CNTL.translateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[286]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:L_blink_CNTL.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[287]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_inner_eyebrow_CNTL.translateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[288]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_inner_eyebrow_CNTL.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[289]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_inner_eyebrow_CNTL.translateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[290]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_inner_eyebrow_CNTL.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[291]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eyebrowcntls_grp|White_Trans_Man_cleanedUP_V2:R_outter_eyebrow_CNTL.translateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[292]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eyebrowcntls_grp|White_Trans_Man_cleanedUP_V2:R_outter_eyebrow_CNTL.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[293]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
@@ -1253,17 +1303,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
 		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 221\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 220\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 220\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1319\n            -height 485\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1251\n            -height 553\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
 		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n"
@@ -1289,13 +1339,13 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
 		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1251\\n    -height 553\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1251\\n    -height 553\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "F487F61C-4037-9A29-D794-0BA8FA6597D6";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 84 -ast 0 -aet 2000 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 513 -ast 0 -aet 2000 ";
 	setAttr ".st" 6;
 createNode lambert -n "Eyes";
 	rename -uid "291CDA4D-4365-E602-AE31-0AAE928D0A43";
@@ -1409,7 +1459,7 @@ createNode animCurveTA -n "R_Leg_2_FK_CTRL_rotateZ";
 	rename -uid "19B28BD1-442B-70FA-2164-7BA59456067A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 -85.371478778553367;
+	setAttr ".ktv[0]"  0 -85.371478778553382;
 createNode animCurveTU -n "R_Leg_2_FK_CTRL_visibility";
 	rename -uid "41BEA0F0-4BF8-429B-DF82-CE8B932AEE99";
 	setAttr ".tan" 9;
@@ -1552,7 +1602,7 @@ createNode animCurveTA -n "L_Leg_1_FK_CTRL_rotateX";
 	rename -uid "CD18A977-452B-C3A2-BBC3-DC961C6274FB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 11.193248213313897;
+	setAttr ".ktv[0]"  0 11.193248213313899;
 createNode animCurveTA -n "L_Leg_1_FK_CTRL_rotateY";
 	rename -uid "8306BCCF-4619-C9C0-212C-FEAC872390AE";
 	setAttr ".tan" 18;
@@ -1787,7 +1837,7 @@ createNode animCurveTA -n "L_Thumb_1_CTRL_rotateZ";
 	rename -uid "B1AB3E82-4CBD-A323-0135-8F8F449B14DE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 -10.339111231278704;
+	setAttr ".ktv[0]"  0 -10.339111231278705;
 createNode animCurveTU -n "L_Thumb_1_CTRL_scaleX";
 	rename -uid "6AF8AFD3-4006-ABF4-FD3F-6CA1C9DCB02E";
 	setAttr ".tan" 18;
@@ -1930,7 +1980,7 @@ createNode animCurveTA -n "L_Arm_Wrist_IK_CTRL_rotateX";
 	rename -uid "AE5A39E7-4F6E-DE57-3BD7-E8A42A9FA17F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 19.351252940422739;
+	setAttr ".ktv[0]"  0 19.351252940422743;
 createNode animCurveTA -n "L_Arm_Wrist_IK_CTRL_rotateY";
 	rename -uid "D81C8ECF-405A-A03B-E358-2CB4FED63502";
 	setAttr ".tan" 18;
@@ -2368,120 +2418,135 @@ createNode animCurveTU -n "Neck_1_CTRL_visibility";
 	rename -uid "AE302D0F-4F4B-C167-D93C-B792D93A2090";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 32 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 5 ".ktv[0:4]"  0 1 32 1 174 1 182 1 220 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Neck_1_CTRL_translateX";
 	rename -uid "68C1A2B4-4EE7-2D08-9B91-A3B54A6B019D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 32 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 32 0 174 0 182 0 220 0;
 createNode animCurveTL -n "Neck_1_CTRL_translateY";
 	rename -uid "124C8E6F-406C-007B-23E9-ED9C09610C48";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 32 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 32 0 174 0 182 0 220 0;
 createNode animCurveTL -n "Neck_1_CTRL_translateZ";
 	rename -uid "59D999A2-4B88-13A6-7E9D-C3A2F37CBBCA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 32 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 32 0 174 0 182 0 220 0;
 createNode animCurveTA -n "Neck_1_CTRL_rotateX";
 	rename -uid "CDD27B29-4D29-AAC3-C1CE-D3979BAC8614";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 -1.9980023085834944 7 0.66206409449892167
-		 32 4.3712536456331144 50 4.3840288141650872;
+	setAttr -s 7 ".ktv[0:6]"  0 -1.9980023085834944 7 0.66206409449892167
+		 32 4.3712536456331144 50 4.3840288141650872 174 4.3840288141650872 182 4.5002105207977889
+		 220 3.8413134889175642;
 createNode animCurveTA -n "Neck_1_CTRL_rotateY";
 	rename -uid "A36E5EC5-437C-EEFD-8B4D-CE9BDA64E053";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 5.4682589508192576 7 -0.40053332292943317
-		 32 -0.40053332292943328 50 -4.389139711025547;
+	setAttr -s 7 ".ktv[0:6]"  0 5.4682589508192576 7 -0.40053332292943317
+		 32 -0.40053332292943328 50 -4.389139711025547 174 -4.389139711025547 182 -2.4965742707119283
+		 220 -6.5432545952669852;
 createNode animCurveTA -n "Neck_1_CTRL_rotateZ";
 	rename -uid "68DA0375-422C-759C-9165-8B9BB55C0FAA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 19.642730506707085 7 17.834928238988354
-		 32 17.834928238988361 50 17.529382874398618;
+	setAttr -s 7 ".ktv[0:6]"  0 19.642730506707085 7 17.834928238988354
+		 32 17.834928238988365 50 17.529382874398618 174 17.529382874398618 182 14.924430071639216
+		 220 22.399112557547181;
 createNode animCurveTU -n "Neck_1_CTRL_scaleX";
 	rename -uid "F53A4895-4B12-7B2C-4437-D98A05517F47";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 32 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 32 1 174 1 182 1 220 1;
 createNode animCurveTU -n "Neck_1_CTRL_scaleY";
 	rename -uid "29B5A1A4-4E08-0ECB-1404-08BFFACE6AE1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 32 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 32 1 174 1 182 1 220 1;
 createNode animCurveTU -n "Neck_1_CTRL_scaleZ";
 	rename -uid "328EF7E6-416D-E814-5A94-E994D8BB62DD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 32 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 32 1 174 1 182 1 220 1;
 createNode animCurveTU -n "Neck_2_CTRL_visibility";
 	rename -uid "50956025-4115-BC94-D9A2-A58BD227131E";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 20 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 5 ".ktv[0:4]"  0 1 20 1 213 1 233 1 276 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Neck_2_CTRL_translateX";
 	rename -uid "60D94AE0-4FC4-57FC-2D56-A7A459488B38";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 20 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 20 0 213 0 233 0 276 0;
 createNode animCurveTL -n "Neck_2_CTRL_translateY";
 	rename -uid "2B2B6D79-48BD-5E11-0D52-E685103BEA8D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 20 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 20 0 213 0 233 0 276 0;
 createNode animCurveTL -n "Neck_2_CTRL_translateZ";
 	rename -uid "80003A28-46CD-13A9-8780-7390404AD93C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 20 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 20 0 213 0 233 0 276 0;
 createNode animCurveTA -n "Neck_2_CTRL_rotateX";
 	rename -uid "F04B48D2-401B-2B54-8AD8-12981568BBFC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 0 20 0;
+	setAttr -s 18 ".ktv[0:17]"  0 0 20 0 93 1.6425803130144192 110 2.0461180766035523
+		 126 -9.212423679109202 152 -14.639414933150439 175 -19.000984246837582 189 -17.145756273382744
+		 213 -24.804558702033695 233 -35.165114932921995 253 -33.273646276229755 276 -32.666010990515034
+		 282 -33.522338994421602 297 -33.708158583024542 310 -34.594155290684505 319 -34.087172423905749
+		 329 -34.364107032383515 361 -23.369767078414444;
 createNode animCurveTA -n "Neck_2_CTRL_rotateY";
 	rename -uid "D7FEF0E9-47AA-4B35-4E50-0BAF40C74274";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  0 0 20 0 34 -5.6511410524228189 61 -9.162541377801233
-		 69 -11.503077590554032;
+	setAttr -s 21 ".ktv[0:20]"  0 0 20 0 34 -5.6511410524228189 61 -9.162541377801233
+		 69 -11.503077590554032 93 -10.87603567194536 110 -3.7193977081326342 126 8.504363653544889
+		 152 7.3043453535303247 175 7.546066100969516 189 11.210792988160625 213 13.389951664359016
+		 233 9.8778875304170608 253 15.570582412127704 276 20.391769163659674 282 23.640344877230628
+		 297 24.269482194776611 310 17.19286346491976 319 14.586425611871491 329 16.071519211109177
+		 361 14.90763810610853;
 createNode animCurveTA -n "Neck_2_CTRL_rotateZ";
 	rename -uid "FA770BB7-4DD7-5F82-28EC-5C90D62E0783";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0 7 15.828358173596641 11 9.7720235801926076
-		 20 9.7720235801926076;
+	setAttr -s 19 ".ktv[0:18]"  0 0 11 9.7720235801926094 20 9.7720235801926094
+		 93 2.5044113961702297 110 -2.2601902582921762 126 -2.8204973981389432 152 -7.5662472913468042
+		 175 -14.511910174678139 189 -3.1689872499040854 213 -7.1951987797241452 233 -8.1224802888313636
+		 253 0.43921944161465026 276 2.7653683035513148 282 0.48219079157000461 297 0.024535892178532335
+		 310 -10.514878242522041 319 -8.6637533861291463 329 -9.7112015050867111 361 -0.0047283920241157082;
 createNode animCurveTU -n "Neck_2_CTRL_scaleX";
 	rename -uid "B6BFCAFB-4E36-11FF-0A6A-F4B7394F8FA1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 20 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 20 1 213 1 233 1 276 1;
 createNode animCurveTU -n "Neck_2_CTRL_scaleY";
 	rename -uid "FB8DB1E3-4061-3C46-EA1D-87A4CD51F1F2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 20 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 20 1 213 1 233 1 276 1;
 createNode animCurveTU -n "Neck_2_CTRL_scaleZ";
 	rename -uid "B2427683-4956-2A8C-EDC3-8090B049D3A6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 1 20 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 20 1 213 1 233 1 276 1;
 createNode animCurveTU -n "R_Mouth_up_down_cntl_visibility";
 	rename -uid "A301BD30-4FEB-1558-19E3-75A176D7B5C3";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  0 1 246 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "R_Mouth_up_down_cntl_translateY";
 	rename -uid "41B5372B-47AF-34B9-F91C-C8BAB197FF2C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 -0.22776155293280453 7 0.033733486061468088;
+	setAttr -s 6 ".ktv[0:5]"  0 -0.22776155293280453 7 0.033733486061468088
+		 246 0.033733486061468088 252 0.4383945118227075 306 0.68744648651298235 467 0;
 createNode animCurveTU -n "R_wide_pucker_visibility";
 	rename -uid "44291089-4AAB-BB68-524C-67BC91993B28";
 	setAttr ".tan" 9;
@@ -2497,69 +2562,84 @@ createNode animCurveTU -n "Eyes_CTRL_visibility";
 	rename -uid "BB9BA0E0-4D94-4865-CE25-C4861DBAB02E";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 10 1 22 1 25 1 57 1 65 1;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 9 ".ktv[0:8]"  0 1 22 1 25 1 57 1 65 1 173 1 188 1 356 1
+		 368 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
 createNode pairBlend -n "pairBlend1";
 	rename -uid "BC02B322-45B9-6A00-2CF1-F49A136E98AB";
 createNode animCurveTL -n "pairBlend1_inTranslateX1";
 	rename -uid "DD8DE98F-4B8E-2FFA-7533-3D9F1C912D81";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  0 -0.04846224334362749 7 -0.0093586003725915565
-		 10 -0.0093586003725915565 13 0.055230661116516741 22 0.040112844021174918 25 0.048398747549497308
-		 57 0.048398747549497308 65 0.0081967079409796667;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.04846224334362749 7 -0.0093586003725915565
+		 13 0.055230661116516741 22 0.040112844021174918 25 0.048398747549497308 57 0.048398747549497308
+		 65 0.0081967079409796667 113 0.054399112068103307 173 0.054399112068103307 188 -0.081805467079494598
+		 207 -0.21221175013383553 226 -0.31355798215435526 254 -0.27130582203381354 356 -0.27130582203381354
+		 368 -0.10073763563425475;
 createNode animCurveTL -n "pairBlend1_inTranslateY1";
 	rename -uid "0F2FAA4A-4FC1-2F23-9322-E5B60DBF887E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  0 -0.30960474687147838 7 -0.42785265926685651
-		 10 -0.42785265926685651 13 -0.3326000297281978 22 -0.33610064903419123 25 -0.37688489974638845
-		 57 -0.37688489974638845 65 -0.35310446904305159;
+	setAttr -s 16 ".ktv[0:15]"  0 -0.30960474687147838 7 -0.37158976138158784
+		 13 -0.3326000297281978 22 -0.33610064903419123 25 -0.37688489974638845 57 -0.37688489974638845
+		 65 -0.35310446904305159 93 -0.32378689262519694 113 -0.24724689252587856 173 -0.24724689252587856
+		 188 -0.29651957666291662 207 -0.32697093937888122 226 -0.24438388202158753 254 -0.26418809212108768
+		 356 -0.26418809212108768 368 -0.3203935385157799;
 createNode animCurveTL -n "pairBlend1_inTranslateZ1";
 	rename -uid "12412F8E-46D7-BD44-7494-8982EDE1FBFC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 -0.63038792271329414 10 -0.63038792271329425
-		 22 -0.63038792271329425 25 -0.63038792271329469 57 -0.63038792271329469 65 -0.63038792271329469;
+	setAttr -s 9 ".ktv[0:8]"  0 -0.63038792271329414 22 -0.63038792271329425
+		 25 -0.63038792271329469 57 -0.63038792271329469 65 -0.63038792271329469 173 -0.63038792271329469
+		 188 -0.63038792271329469 356 -0.63038792271329469 368 -0.63038792271329469;
 createNode animCurveTA -n "pairBlend1_inRotateX1";
 	rename -uid "28C24BBF-4DDB-E9CD-0274-DDB1A3037106";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 -14.254585641166136 10 -14.254585641166136
-		 22 -14.254585641166136 25 -14.254585641166136 57 -14.254585641166136 65 -14.254585641166136;
+	setAttr -s 9 ".ktv[0:8]"  0 -14.254585641166136 22 -14.254585641166136
+		 25 -14.254585641166136 57 -14.254585641166136 65 -14.254585641166136 173 -14.254585641166136
+		 188 -14.254585641166136 356 -14.254585641166136 368 -14.254585641166136;
 createNode animCurveTA -n "pairBlend1_inRotateY1";
 	rename -uid "C4674899-4024-6168-CC39-66AD803B8C93";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 -23.738488721724227 10 -23.738488721724227
-		 22 -23.738488721724227 25 -23.738488721724227 57 -23.738488721724227 65 -23.738488721724227;
+	setAttr -s 9 ".ktv[0:8]"  0 -23.738488721724227 22 -23.738488721724227
+		 25 -23.738488721724227 57 -23.738488721724227 65 -23.738488721724227 173 -23.738488721724227
+		 188 -23.738488721724227 356 -23.738488721724227 368 -23.738488721724227;
 createNode animCurveTA -n "pairBlend1_inRotateZ1";
 	rename -uid "AA61EDF6-493D-9B6D-ADC8-1FA5D4B0E52D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 -1.1184607691898973 10 -1.1184607691898973
-		 22 -1.1184607691898973 25 -1.1184607691898973 57 -1.1184607691898973 65 -1.1184607691898973;
+	setAttr -s 9 ".ktv[0:8]"  0 -1.1184607691898973 22 -1.1184607691898973
+		 25 -1.1184607691898973 57 -1.1184607691898973 65 -1.1184607691898973 173 -1.1184607691898973
+		 188 -1.1184607691898973 356 -1.1184607691898973 368 -1.1184607691898973;
 createNode animCurveTU -n "Eyes_CTRL_scaleX";
 	rename -uid "05B628E4-4B86-1BFA-4F50-34A46EC7546E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 10 1 22 1 25 1 57 1 65 1;
+	setAttr -s 9 ".ktv[0:8]"  0 1 22 1 25 1 57 1 65 1 173 1 188 1 356 1
+		 368 1;
 createNode animCurveTU -n "Eyes_CTRL_scaleY";
 	rename -uid "AF3855DE-4C78-7F92-55A8-599F66FC5469";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 10 1 22 1 25 1 57 1 65 1;
+	setAttr -s 9 ".ktv[0:8]"  0 1 22 1 25 1 57 1 65 1 173 1 188 1 356 1
+		 368 1;
 createNode animCurveTU -n "Eyes_CTRL_scaleZ";
 	rename -uid "2382E047-437C-A76A-95B6-478F6A958EDC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 10 1 22 1 25 1 57 1 65 1;
+	setAttr -s 9 ".ktv[0:8]"  0 1 22 1 25 1 57 1 65 1 173 1 188 1 356 1
+		 368 1;
 createNode animCurveTU -n "Eyes_CTRL_Fallow";
 	rename -uid "966E29C2-4008-44DE-56DA-6DBD4414F809";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 10 0 22 0 25 0 57 0 65 0;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 9 ".ktv[0:8]"  0 0 22 0 25 0 57 0 65 0 173 0 188 0 356 0
+		 368 0;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
 createNode animCurveTA -n "Lower_Body_CTRL_rotateX";
 	rename -uid "49AF09EB-4CD7-8E24-7B32-B883AED8AAB4";
 	setAttr ".tan" 18;
@@ -2594,65 +2674,134 @@ createNode animCurveTA -n "Jaw_CTRL_rotateX";
 	rename -uid "5DD0FA7F-40F8-22A8-AB6C-E991C8B8158B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  0 -3.4385873898958792 7 -1.5256925726805166;
+	setAttr -s 13 ".ktv[0:12]"  0 -3.4385873898958792 7 -1.5256925726805166
+		 91 -1.5256925726805166 108 7.216966626957352 125 16.763609341890835 152 27.661872116501939
+		 175 30.231676269302234 183 -1.606878606743569 191 0 197 3.6692104402381021 201 -3.5701183929308971
+		 205 2.5291757096892531 209 -1.9026813726571374;
 createNode animCurveTA -n "Jaw_CTRL_rotateY";
 	rename -uid "0FAA1EDD-4A40-2019-0AD0-C183BB9BAED2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 91 0 108 0 175 0 191 0;
 createNode animCurveTA -n "Jaw_CTRL_rotateZ";
 	rename -uid "79FA3E67-4BCC-4285-F1ED-53B9EFA3BC9D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 91 0 108 0 175 0 191 0;
 createNode animCurveTU -n "Jaw_CTRL_visibility";
 	rename -uid "2D66B1D6-4A32-551A-6304-499A26D4E506";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  0 1 91 1 108 1 175 1 191 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Jaw_CTRL_translateX";
 	rename -uid "73B0E7D8-4FAD-B091-0187-BC80029DDB29";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 91 0 108 0 175 0 191 0;
 createNode animCurveTL -n "Jaw_CTRL_translateY";
 	rename -uid "EA3C6730-46B9-29F4-056E-4A8098E66C6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 91 0 108 0 175 0 191 0;
 createNode animCurveTL -n "Jaw_CTRL_translateZ";
 	rename -uid "44738C79-438A-A343-2075-B9BE4E20BD5F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  0 0 91 0 108 0 175 0 191 0;
 createNode animCurveTU -n "Jaw_CTRL_scaleX";
 	rename -uid "86D32FAF-4208-0B4B-6498-7787C71BC436";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 91 1 108 1 175 1 191 1;
 createNode animCurveTU -n "Jaw_CTRL_scaleY";
 	rename -uid "5BA3DECD-495B-754A-1820-44B6B83E6362";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 91 1 108 1 175 1 191 1;
 createNode animCurveTU -n "Jaw_CTRL_scaleZ";
 	rename -uid "4C73CC51-4C83-401C-59F8-EE85C106F085";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 5 ".ktv[0:4]"  0 1 91 1 108 1 175 1 191 1;
 createNode animCurveTU -n "Eyes_CTRL_blendParent1";
 	rename -uid "C4182AC6-40EA-6C9F-88C9-7C84A8899C7A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 10 0 22 0 25 0 57 0 65 0;
+	setAttr -s 9 ".ktv[0:8]"  0 0 22 0 25 0 57 0 65 0 173 0 188 0 356 0
+		 368 0;
+createNode animCurveTU -n "R_blink_CNTL_visibility";
+	rename -uid "85B9365C-4A36-DE54-6735-C3BF000E43C1";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  114 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "R_blink_CNTL_translateY";
+	rename -uid "BD1692BA-4B09-744D-D8C1-5EA416926163";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  114 0 128 -0.72402828335037839 152 -0.86747492412888505
+		 157 -1.1226030205525823 167 -0.75930886684315624 189 0;
+createNode animCurveTU -n "L_blink_CNTL_visibility";
+	rename -uid "0F1D855F-4AD0-9D1C-65B2-2EA22FC30F03";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  114 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "L_blink_CNTL_translateY";
+	rename -uid "CC6AE012-47CA-517D-90F5-38893713A3D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  114 0 128 -0.72402828335037839 152 -0.86747492412888505
+		 157 -1.1226030205525823 167 -0.75930886684315624 189 0;
+createNode animCurveTL -n "R_inner_eyebrow_CNTL_translateY";
+	rename -uid "AACC0AC3-4502-B483-6482-3F8D2E7909D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  138 0 153 -0.57098747853933673 167 0.39632462178178685
+		 244 0.39632462178178685 254 0.48049884227502337 271 0.68511224171875318 328 0.68511224171875318
+		 348 0;
+createNode animCurveTU -n "R_inner_eyebrow_CNTL_visibility";
+	rename -uid "89A3972C-40D9-CA91-EE32-5CAE92F36111";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  138 1 153 1 244 1 328 1 348 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
+createNode animCurveTU -n "L_inner_eyebrow_CNTL_visibility";
+	rename -uid "9E558B84-4B5D-8DAB-5B24-17B77C9DAA35";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  138 1 153 1 244 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTL -n "L_inner_eyebrow_CNTL_translateY";
+	rename -uid "7B1E2BF1-45BF-EE4B-A457-B7B722617608";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  138 0 153 -0.57098747853933673 167 0.39632462178178685
+		 244 0.39632462178178685 254 0.48987881645189191 363 0;
+createNode animCurveTL -n "R_outter_eyebrow_CNTL_translateY";
+	rename -uid "F3D6CA14-4497-50AE-B52B-4F9ED53D62B9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  247 0 254 0.87205684479795309 328 0.87205684479795309
+		 348 0;
+createNode animCurveTU -n "R_outter_eyebrow_CNTL_visibility";
+	rename -uid "5E1D4D54-4628-4A92-96BC-39ACCC8ECF19";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  247 1 254 1 328 1 348 1;
+	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "E6BD4429-4360-D671-A3C0-15B7AE442F68";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 73;
-	setAttr ".unw" 73;
+	setAttr -k on ".o" 142;
+	setAttr ".unw" 142;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -2962,9 +3111,9 @@ connectAttr "Neck_1_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[74]";
 connectAttr "Neck_2_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[75]";
 connectAttr "Neck_2_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[76]";
 connectAttr "Neck_2_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[77]";
-connectAttr "Neck_2_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[78]";
-connectAttr "Neck_2_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[79]";
-connectAttr "Neck_2_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[80]";
+connectAttr "Neck_2_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[78]";
+connectAttr "Neck_2_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[79]";
+connectAttr "Neck_2_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[80]";
 connectAttr "Neck_2_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[81]";
 connectAttr "Neck_2_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[82]";
 connectAttr "Neck_2_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[83]";
@@ -3288,10 +3437,10 @@ connectAttr "pairBlend1.otz" "White_Trans_Man_cleanedUP_V2RN.phl[264]";
 connectAttr "pairBlend1.orx" "White_Trans_Man_cleanedUP_V2RN.phl[265]";
 connectAttr "pairBlend1.ory" "White_Trans_Man_cleanedUP_V2RN.phl[266]";
 connectAttr "pairBlend1.orz" "White_Trans_Man_cleanedUP_V2RN.phl[267]";
-connectAttr "Eyes_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[268]";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[269]" "pairBlend1.w";
-connectAttr "Eyes_CTRL_blendParent1.o" "White_Trans_Man_cleanedUP_V2RN.phl[270]"
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[268]" "pairBlend1.w";
+connectAttr "Eyes_CTRL_blendParent1.o" "White_Trans_Man_cleanedUP_V2RN.phl[269]"
 		;
+connectAttr "Eyes_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[270]";
 connectAttr "Eyes_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[271]";
 connectAttr "Eyes_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[272]";
 connectAttr "Eyes_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[273]";
@@ -3308,6 +3457,26 @@ connectAttr "R_wide_pucker_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[281
 connectAttr "R_Mouth_up_down_cntl_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[282]"
 		;
 connectAttr "R_Mouth_up_down_cntl_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[283]"
+		;
+connectAttr "R_blink_CNTL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[284]"
+		;
+connectAttr "R_blink_CNTL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[285]"
+		;
+connectAttr "L_blink_CNTL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[286]"
+		;
+connectAttr "L_blink_CNTL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[287]"
+		;
+connectAttr "L_inner_eyebrow_CNTL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[288]"
+		;
+connectAttr "L_inner_eyebrow_CNTL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[289]"
+		;
+connectAttr "R_inner_eyebrow_CNTL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[290]"
+		;
+connectAttr "R_inner_eyebrow_CNTL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[291]"
+		;
+connectAttr "R_outter_eyebrow_CNTL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[292]"
+		;
+connectAttr "R_outter_eyebrow_CNTL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[293]"
 		;
 connectAttr "Room_Geo.di" "Hospital_RoomRN.phl[1]";
 connectAttr "Room.di" "Hospital_RoomRN.phl[2]";
@@ -3327,6 +3496,7 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "sharedReferenceNode.sr" "White_Trans_Man_cleanedUP_V2RN.sr";
 connectAttr "layerManager.dli[1]" "Room_Geo.id";
 connectAttr "layerManager.dli[2]" "Room.id";
 connectAttr "Eyes.oc" "lambert2SG.ss";
