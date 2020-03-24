@@ -1,37 +1,37 @@
 //Maya ASCII 2018 scene
 //Name: Trans_White_Man_Anims.ma
-//Last modified: Wed, Mar 11, 2020 11:56:21 AM
+//Last modified: Mon, Mar 23, 2020 03:50:27 PM
 //Codeset: 1252
 file -rdi 1 -ns "White_Trans_Man_cleanedUP_V2" -rfn "White_Trans_Man_cleanedUP_V2RN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V4.ma";
-file -rdi 1 -ns "Hospital_Room" -rfn "Hospital_RoomRN1" -op "fbx" -typ "FBX export"
-		 "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/UAB FinalSim/Assets/Models/Hospital_Room.fbx";
+		 -op "v=0;" -typ "mayaAscii" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V5).ma";
+file -rdi 1 -ns "Hospital_Room" -rfn "Hospital_RoomRN2" -op "fbx" -typ "FBX export"
+		 "C:/Users/Londathan/Documents/MyRepos/UAB-FINAL-SIM/UAB FinalSim/Assets/Models/Hospital_Room.fbx";
 file -r -ns "White_Trans_Man_cleanedUP_V2" -dr 1 -rfn "White_Trans_Man_cleanedUP_V2RN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V4.ma";
-file -r -ns "Hospital_Room" -dr 1 -rfn "Hospital_RoomRN1" -op "fbx" -typ "FBX export"
-		 "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/UAB FinalSim/Assets/Models/Hospital_Room.fbx";
+		 -op "v=0;" -typ "mayaAscii" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V5).ma";
+file -r -ns "Hospital_Room" -dr 1 -rfn "Hospital_RoomRN2" -op "fbx" -typ "FBX export"
+		 "C:/Users/Londathan/Documents/MyRepos/UAB-FINAL-SIM/UAB FinalSim/Assets/Models/Hospital_Room.fbx";
 requires maya "2018";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "2.0.1";
 requires "stereoCamera" "10.0";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "2.0.1";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2018";
 fileInfo "version" "2018";
 fileInfo "cutIdentifier" "201706261615-f9658c4cfc";
-fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
-fileInfo "license" "education";
+fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n";
+fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "44811F98-4616-F5ED-EF63-A0B37E545A50";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 72.25693695903901 182.07144493585614 187.84084162693711 ;
-	setAttr ".r" -type "double3" -16.538352728935052 406.59999999918915 1.1572596763155443e-15 ;
+	setAttr ".t" -type "double3" 43.638199938083623 124.86395021242002 -12.746018010532408 ;
+	setAttr ".r" -type "double3" -6.3383527289424801 449.79999999906255 2.2779091122390564e-13 ;
 	setAttr ".rp" -type "double3" -5.6843418860808015e-14 1.7479351299698465e-12 0 ;
 	setAttr ".rpt" -type "double3" 4.2599877956648912e-14 -4.4377387521352164e-14 -3.9521707014853258e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F9297811-477A-7CE3-C825-44932FFD8C79";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 309.95276180179326;
+	setAttr ".coi" 258.3883994907971;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -192,33 +192,34 @@ createNode transform -n "White_Trans_Man_cleanedUP_V3:Jaw_CTRL_GRP" -p "White_Tr
 	setAttr ".r" -type "double3" -119.89183848473469 -90 0 ;
 	setAttr ".s" -type "double3" 0.99999999999999956 0.99999999999999989 0.99999999999999989 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A3933873-44C1-A58A-3DAB-DB970226E365";
+	rename -uid "77F30FE7-4949-98BF-1CAF-C88E79BDA51D";
 	setAttr -s 23 ".lnk";
 	setAttr -s 23 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "00D2B2F9-4EFA-5ADA-164B-A6A675FDABFB";
+	rename -uid "9533DEF4-4B5C-1085-0516-AFB9F1AFFE4D";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "A3376716-486D-D580-A213-EDADB784E61C";
+	rename -uid "7ED3A2B9-4DFD-A71A-FF44-8EB98F6DD1C6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D8AD01FB-4C1F-CEB6-FADC-FD88E71D6214";
-	setAttr ".cdl" 1;
-	setAttr -s 4 ".dli[1:3]"  1 2 3;
-	setAttr -s 4 ".dli";
+	rename -uid "428A49E3-4AF6-EAF9-E5E4-47BDD73B8A54";
+	setAttr ".cdl" 4;
+	setAttr -s 5 ".dli[1:4]"  1 2 3 4;
+	setAttr -s 5 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "85C37F2B-46EE-B240-4CAC-CB989B1596B2";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "AFB6F631-4210-70ED-B3D2-8DB87759C085";
+	rename -uid "EFA288A8-4874-4B89-D715-F08CDE048B71";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "015AF671-4106-A7EE-70CC-3883FD523479";
 	setAttr ".g" yes;
 createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 	rename -uid "D03C1A59-4CE7-9F51-21DD-B7BA59AF0EA1";
-	setAttr -s 3 ".fn";
-	setAttr ".fn[0]" -type "string" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V4.ma";
-	setAttr ".fn[1]" -type "string" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V3.ma";
-	setAttr ".fn[2]" -type "string" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V2/White Trans Man cleanedUP_V2.ma";
-	setAttr -s 949 ".phl";
+	setAttr -s 4 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/Users/Londathan/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V5).ma";
+	setAttr ".fn[1]" -type "string" "C:/Users/Londathan/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V4.ma";
+	setAttr ".fn[2]" -type "string" "C:/Users/Londathan/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V3.ma";
+	setAttr ".fn[3]" -type "string" "C:/Users/10689129/Documents/MyRepos/UAB-FINAL-SIM/Animations/White Trans Man cleanedUP_V2/White Trans Man cleanedUP_V2.ma";
+	setAttr -s 948 ".phl";
 	setAttr ".phl[294]" 0;
 	setAttr ".phl[295]" 0;
 	setAttr ".phl[296]" 0;
@@ -1161,7 +1162,6 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 	setAttr ".phl[1233]" 0;
 	setAttr ".phl[1234]" 0;
 	setAttr ".phl[1235]" 0;
-	setAttr ".phl[1236]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"White_Trans_Man_cleanedUP_V2RN"
 		"White_Trans_Man_cleanedUP_V2RN" 12
@@ -1189,7 +1189,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[292]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_rotate_AnimLayer1.inputAZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[293]" ""
-		"White_Trans_Man_cleanedUP_V2RN" 2116
+		"White_Trans_Man_cleanedUP_V2RN" 2115
 		1 |White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper 
 		"blendParent1" "blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		1 |White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL 
@@ -1201,7 +1201,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
 		"visibility" " 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
-		"translate" " -type \"double3\" -183.29484800961643032 111.2531243321384693 6.98152071347237957"
+		"translate" " -type \"double3\" -197.45423529974340227 111.86942013066366997 5.15505155658501479"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
 		"translateX" " -av"
@@ -1210,7 +1210,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
-		"rotate" " -type \"double3\" -30.54028582164539785 64.45244227660545278 -165.94124637599136918"
+		"rotate" " -type \"double3\" 218.87327451819541579 -260.49559081291045004 -223.91064981878517415"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye" 
 		"rotateX" " -av"
@@ -1228,7 +1228,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
 		"visibility" " 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
-		"translate" " -type \"double3\" -184.60913088953392958 111.50088331519968676 13.19513018589366204"
+		"translate" " -type \"double3\" -197.88798641827708025 112.1250672925702645 11.49099522073720436"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
 		"translateX" " -av"
@@ -1237,7 +1237,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
-		"rotate" " -type \"double3\" -34.15291689159581523 46.67565486534257957 -172.92830582375688664"
+		"rotate" " -type \"double3\" -148.38232861030493837 -261.13693060305695326 131.87339755133879748"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye" 
 		"rotateX" " -av"
@@ -1424,7 +1424,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Right_Leg_IK_FK_Switch" 
 		"scaleZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Right_Leg_IK_FK_Switch" 
-		"IK" " -av -k 1 1"
+		"IK" " -av -k 1 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Left_Leg_IK_FK_Switch" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Left_Leg_IK_FK_Switch" 
@@ -1453,7 +1453,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Left_Leg_IK_FK_Switch" 
 		"scaleZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Left_Leg_IK_FK_Switch" 
-		"IK" " -av -k 1 1"
+		"IK" " -av -k 1 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:L_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:L_Leg_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Leg_1_IK_CTRL" 
 		"translate" " -type \"double3\" -0.024145515776673607 0.24786687029979371 0.042211566684462798"
 		
@@ -1466,7 +1466,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"translate" " -type \"double3\" 6.39659022325906879 8.78061173028211783 1.77023167462622233"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:L_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:L_Leg_Ankle_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Leg_Ankle_IK_CTRL" 
-		"rotate" " -type \"double3\" -53.05727362963227023 59.85744459754403834 43.67731098279691793"
+		"rotate" " -type \"double3\" -53.05727362963227733 59.85744459754403834 43.67731098279691793"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:R_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:R_Leg_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_PV_CTRL" 
 		"translate" " -type \"double3\" 12.04606280077137015 -6.21739983476109259 4.66995546229065095"
@@ -1478,7 +1478,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:R_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:R_Leg_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_PV_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:R_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:R_Leg_Ankle_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_Ankle_IK_CTRL" 
-		"translate" " -type \"double3\" -3.73619015408431165 -8.22858176846221134 0.83672477934387457"
+		"translate" " -type \"double3\" -4.57665937412996193 -8.39822444364168774 0.74072386117459532"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:R_Leg_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:IK_Master_Grp|White_Trans_Man_cleanedUP_V2:R_Leg_Ankle_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Leg_Ankle_IK_CTRL" 
 		"translateX" " -av"
@@ -1525,7 +1525,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL" 
-		"rotate" " -type \"double3\" 27.29141988227895155 0 0"
+		"rotate" " -type \"double3\" 19.14363099364796028 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL" 
@@ -1551,7 +1551,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL" 
-		"rotate" " -type \"double3\" 25.63916567335900609 0 0"
+		"rotate" " -type \"double3\" 17.9388972743886832 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL" 
@@ -1603,7 +1603,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL" 
-		"rotate" " -type \"double3\" 0 0 5.12305577984852611"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL" 
@@ -1629,7 +1629,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL" 
-		"rotate" " -type \"double3\" -1.42738149528086078 10.12511149797464682 25.57566802404556583"
+		"rotate" " -type \"double3\" -1.99800230858349437 5.46825895081925761 19.64273050670708542"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL" 
 		"rotateX" " -av"
@@ -1656,8 +1656,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
-		"rotate" " -type \"double3\" -2.88656920844319709 2.10952181973610742 7.30753036816977453"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_1_CTRL|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Neck_2_CTRL" 
@@ -1787,7 +1786,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL" 
-		"rotate" " -type \"double3\" 0 16.14665512185327501 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Clavical_CTRL" 
@@ -2308,7 +2307,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL" 
-		"rotate" " -type \"double3\" 0 -13.13275980200281623 0"
+		"rotate" " -type \"double3\" 0 -24.73186772663548894 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL" 
@@ -2334,7 +2333,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -5.29804998478238343"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Pinky_1_CTRL" 
@@ -2438,7 +2437,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -5.54241780125245054"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL" 
@@ -2490,7 +2489,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL" 
-		"rotate" " -type \"double3\" 0 0 21.68418777615243087"
+		"rotate" " -type \"double3\" 0 0 13.32584389133509717"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Ring_3_CTRL" 
@@ -2542,7 +2541,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -4.64165988842560306"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL" 
@@ -2594,7 +2593,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL" 
-		"rotate" " -type \"double3\" 0 0 8.35834388481734081"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL" 
@@ -2620,7 +2619,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL" 
-		"rotate" " -type \"double3\" 0 0 7.35151355118103389"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Middle_4_CTRL" 
@@ -2672,7 +2671,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -10.45485731537575091"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL" 
@@ -2698,7 +2697,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL" 
-		"rotate" " -type \"double3\" 0 0 8.35834388481734081"
+		"rotate" " -type \"double3\" 0 0 5.37514798922491188"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL" 
@@ -2724,7 +2723,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL" 
-		"rotate" " -type \"double3\" 0 0 3.45701176404322164"
+		"rotate" " -type \"double3\" 0 0 2.18365608857925864"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_1_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_2_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_3_CTRL|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Index_4_CTRL" 
@@ -2750,7 +2749,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 -17.37231529527969798 4.0478679646959721"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Upper_Body_CTRL|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_1_CTRL|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_2_CTRL|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Spine_3_CTRL|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Shoulder_CTRL|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Clavical_CTRL|White_Trans_Man_cleanedUP_V2:R_Hand_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Thumb_1_CTRL" 
@@ -3111,7 +3110,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
-		"translate" " -type \"double3\" -0.021812899335961183 -0.40147248252242546 -0.63038792271329414"
+		"translate" " -type \"double3\" -0.04846224334362749 -0.30960474687147838 -0.63038792271329414"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL" 
 		"translateX" " -av"
@@ -3195,7 +3194,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
-		"translate" " -type \"double3\" -190.41309572950791562 -23.62065377963341462 8.87167930151970907"
+		"translate" " -type \"double3\" -182.4751924914226322 -23.62065377963341462 8.87167930151970907"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"translateX" " -av"
@@ -3204,7 +3203,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
-		"rotate" " -type \"double3\" 0 74.99999999999997158 0"
+		"rotate" " -type \"double3\" 0 81.26211427612517468 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
 		"rotateX" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master" 
@@ -3234,7 +3233,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_Mouth_up_down_cntl" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_Mouth_up_down_cntl" 
-		"translateY" " -av 0"
+		"translateY" " -av -0.22776155293280453"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:R_blink_CNTL" 
@@ -3246,7 +3245,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:M_cntl" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:M_cntl" 
-		"translateX" " -av 2.55"
+		"translateX" " -av 0"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_outter_eyebrow_CNTL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:master_cntl_Grp|White_Trans_Man_cleanedUP_V2:Face_CNTL_Master|White_Trans_Man_cleanedUP_V2:eybrowcntls_grp|White_Trans_Man_cleanedUP_V2:L_outter_eyebrow_CNTL" 
@@ -3349,7 +3348,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
-		"translate" " -type \"double3\" -0.84662472031376501 1.56653734423963353 -1.93170490870717515"
+		"translate" " -type \"double3\" 0.60579897064757959 1.15086433527834719 -1.92723987128947871"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
 		"translateX" " -av"
@@ -3358,7 +3357,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
-		"rotate" " -type \"double3\" 28.87243061462106652 21.30108942955740048 -18.2197200197900564"
+		"rotate" " -type \"double3\" 19.35125294042274291 18.08938143865865555 -19.65652469749586828"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL" 
 		"rotateX" " -av"
@@ -3432,7 +3431,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL" 
-		"translate" " -type \"double3\" 0.23890734271739239 2.01395368667302543 -1.99935392815459179"
+		"translate" " -type \"double3\" 2.54444946941539563 2.57914295842638941 -0.64742923698130161"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL" 
 		"translateX" " -av"
@@ -3459,7 +3458,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
 		"visibility" " -av 1"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
-		"translate" " -type \"double3\" -1.525575768004515 2.29235490498622818 3.02334228815164119"
+		"translate" " -type \"double3\" -1.88279494977193229 2.6396110432037716 3.86374621295085152"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
 		"translateX" " -av"
@@ -3468,7 +3467,7 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
 		"translateZ" " -av"
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
-		"rotate" " -type \"double3\" -22.35178311480414948 27.75947001392020042 -64.74212695435970488"
+		"rotate" " -type \"double3\" -13.78287668618631479 27.75947001392020042 -64.74212695435970488"
 		
 		2 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL" 
 		"rotateX" " -av"
@@ -3520,6 +3519,28 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		2 "White_Trans_Man_cleanedUP_V2:Geometry_Layer" "overrideColorRGB" " -type \"float3\" 0 0 0"
 		
 		2 "White_Trans_Man_cleanedUP_V2:Control_Layer" "visibility" " 1"
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.instObjGroups" 
+		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.instObjGroups" 
+		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateX" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateX" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateY" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateY" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateZ" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateZ" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateX" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateX" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateY" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateY" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateZ" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateZ" 
+		""
 		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintTranslateX" 
 		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.translateX" 
 		""
@@ -3556,33 +3577,11 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL_parentConstraint1.constraintRotateZ" 
 		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.rotateZ" 
 		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.instObjGroups" 
-		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.instObjGroups" 
-		"White_Trans_Man_cleanedUP_V2:Right_EyeSG.dagSetMembers" "-na"
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShapeOrig.worldMesh" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.inMesh" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateX" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateX" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateY" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateY" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateZ" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.translateZ" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateX" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateX" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateY" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateY" 
-		""
-		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintRotateZ" 
-		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateZ" 
-		""
 		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShapeOrig.worldMesh" 
 		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Right_Eye|White_Trans_Man_cleanedUP_V2:Right_EyeShape.inMesh" 
+		""
+		3 "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShapeOrig.worldMesh" 
+		"|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Left_Eye|White_Trans_Man_cleanedUP_V2:Left_EyeShape.inMesh" 
 		""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Shirt.drawOverride" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[294]" ""
@@ -3648,17 +3647,17 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[323]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.rotateZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[324]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[325]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[326]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[327]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[328]" ""
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.blendParent1" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[329]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[325]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.blendParent1" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[326]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.visibility" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[327]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleX" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[328]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[329]" ""
+		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper.scaleZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[330]" ""
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Geometry|White_Trans_Man_cleanedUP_V2:Mouth|White_Trans_Man_cleanedUP_V2:Upper|White_Trans_Man_cleanedUP_V2:Upper_parentConstraint1.constraintTranslateX" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[331]" "White_Trans_Man_cleanedUP_V2:Upper.tx"
@@ -5136,23 +5135,23 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1064]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Legs_CTRL|White_Trans_Man_cleanedUP_V2:Left_Foot_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Foot_1_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Foot_1_CTRL|White_Trans_Man_cleanedUP_V2:L_Foot_2_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Foot_2_CTRL.visibility" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1065]" ""
-		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1066]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rx"
-		
-		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1067]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rz"
-		
-		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1068]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.ry"
-		
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintTranslateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1069]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.tx"
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1066]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.tx"
 		
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintTranslateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1070]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.ty"
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1067]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.ty"
 		
 		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintTranslateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1071]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.tz"
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1068]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.tz"
+		
+		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateX" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1069]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rx"
+		
+		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateZ" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1070]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.rz"
+		
+		5 3 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL|White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL_parentConstraint1.constraintRotateY" 
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1071]" "White_Trans_Man_cleanedUP_V2:Lower_Body_CTRL.ry"
 		
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:Transform_CTRL_GRP|White_Trans_Man_cleanedUP_V2:Transform_CTRL|White_Trans_Man_cleanedUP_V2:COG_CTRL_GRP|White_Trans_Man_cleanedUP_V2:COG_CTRL|White_Trans_Man_cleanedUP_V2:Eyes_CTRL.Fallow" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1072]" ""
@@ -5366,130 +5365,128 @@ createNode reference -n "White_Trans_Man_cleanedUP_V2RN";
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1173]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_PV_CTRL.scaleZ" 
 		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1174]" ""
-		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.Fallow" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1175]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1176]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1175]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1177]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1176]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1178]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1177]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1179]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1178]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1180]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1179]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1181]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1180]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1182]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1181]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1183]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1182]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1184]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1183]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1185]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1184]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1186]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1185]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1187]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1186]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1188]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1187]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1189]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1188]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1190]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1189]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1191]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1190]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1192]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1191]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1193]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1192]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1194]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1193]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:L_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:L_Arm_Hand_IK_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1195]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1194]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1196]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1195]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1197]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1196]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1198]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1197]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1199]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1198]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1200]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1199]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1201]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1200]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1202]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1201]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1203]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1202]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1204]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1203]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_1_IK_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1205]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1204]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1206]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1205]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1207]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1206]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1208]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1207]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1209]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1208]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1210]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1209]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1211]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1210]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1212]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1211]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1213]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1212]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1214]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1213]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_Offset_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_PV_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1215]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1214]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.Fallow" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1216]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1215]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1217]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1216]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1218]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1217]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1219]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1218]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1220]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1219]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1221]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1220]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1222]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1221]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1223]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1222]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1224]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1223]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1225]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1224]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1226]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1225]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.rotateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1227]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1226]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.rotateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1228]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1227]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.rotateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1229]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1228]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.translateX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1230]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1229]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.translateY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1231]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1230]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.translateZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1232]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1231]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.scaleX" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1233]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1232]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.scaleY" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1234]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1233]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.scaleZ" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1235]" ""
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1234]" ""
 		5 4 "White_Trans_Man_cleanedUP_V2RN" "|White_Trans_Man_cleanedUP_V2:White_Trans_Man|White_Trans_Man_cleanedUP_V2:Controls|White_Trans_Man_cleanedUP_V2:R_Arm_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Wrist_IK_CTRL|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL_GRP|White_Trans_Man_cleanedUP_V2:R_Arm_Hand_IK_CTRL.visibility" 
-		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1236]" "";
+		"White_Trans_Man_cleanedUP_V2RN.placeHolderList[1235]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
@@ -5555,51 +5552,53 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "3C96A24D-465D-8036-1DE8-EE934A4D568F";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
-		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
+		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 622\n            -height 255\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
-		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 622\n            -height 254\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 622\n            -height 254\n"
-		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1251\n            -height 553\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
+		+ "            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
+		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
+		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n"
+		+ "            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1319\n            -height 566\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
+		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
+		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n"
+		+ "            -width 1319\n            -height 566\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner1\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner1\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n"
+		+ "            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n"
+		+ "            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n"
+		+ "            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n"
+		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n"
+		+ "                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n"
+		+ "                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n"
+		+ "                -clipTime \"on\" \n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
+		+ "                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n"
+		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n"
+		+ "                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n"
+		+ "                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n"
+		+ "                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
-		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n"
-		+ "            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
-		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n"
-		+ "                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n"
-		+ "                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n"
-		+ "                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -clipTime \"on\" \n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n"
-		+ "                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
-		+ "                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
-		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n"
-		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
-		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
-		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
-		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1251\\n    -height 553\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1251\\n    -height 553\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n"
+		+ "                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 566\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 566\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "F487F61C-4037-9A29-D794-0BA8FA6597D6";
-	setAttr ".b" -type "string" "playbackOptions -min 421 -max 495 -ast 401 -aet 2000 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 464 -ast 0 -aet 2000 ";
 	setAttr ".st" 6;
 createNode lambert -n "Eyes";
 	rename -uid "291CDA4D-4365-E602-AE31-0AAE928D0A43";
@@ -5915,57 +5914,113 @@ createNode animCurveTA -n "R_Arm_Wrist_IK_CTRL_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  0 -13.782876686186315 400 -13.782876686186315
 		 448 -13.782876686186315 454 -22.351783114804149;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  1 1 1;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  1 1 1;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTA -n "R_Arm_Wrist_IK_CTRL_rotateY";
 	rename -uid "953E9B73-4E4A-DF60-7F8E-03AB047B0A3D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 27.7594700139202 400 27.7594700139202
 		 448 27.7594700139202;
+	setAttr -s 3 ".kit[1:2]"  1 18;
+	setAttr -s 3 ".kot[1:2]"  1 18;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
+	setAttr -s 3 ".kox[1:2]"  1 1;
+	setAttr -s 3 ".koy[1:2]"  0 0;
 createNode animCurveTA -n "R_Arm_Wrist_IK_CTRL_rotateZ";
 	rename -uid "7A86FAF0-4FAC-E5EF-FB9B-538112EEAE07";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 -64.742126954359705 400 -64.742126954359705
 		 448 -64.742126954359705;
+	setAttr -s 3 ".kit[1:2]"  1 18;
+	setAttr -s 3 ".kot[1:2]"  1 18;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
+	setAttr -s 3 ".kox[1:2]"  1 1;
+	setAttr -s 3 ".koy[1:2]"  0 0;
 createNode animCurveTU -n "R_Arm_Wrist_IK_CTRL_visibility";
 	rename -uid "FA9EB941-4448-3471-9443-8C83527623E1";
-	setAttr ".tan" 9;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kit[0:2]"  9 1 9;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
 createNode animCurveTL -n "R_Arm_Wrist_IK_CTRL_translateX";
 	rename -uid "188DD061-4546-3A64-EFD9-E5AEF4BE4A0B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 -1.8827949497719323 400 -1.458549945564251
+	setAttr -s 4 ".ktv[0:3]"  0 -1.8827949497719323 400 -1.8827949497719323
 		 448 -1.458549945564251 454 -1.525575768004515;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  1 1 1;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  1 1 1;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTL -n "R_Arm_Wrist_IK_CTRL_translateY";
 	rename -uid "D68809AB-4E90-822C-ED75-9E8A8A8AA9FC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 2.6396110432037716 400 2.2302334429526365
+	setAttr -s 4 ".ktv[0:3]"  0 2.6396110432037716 400 2.6396110432037716
 		 448 2.2302334429526365 454 2.2923549049862282;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  1 1 1;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  1 1 1;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTL -n "R_Arm_Wrist_IK_CTRL_translateZ";
 	rename -uid "389D06C7-4B81-53DD-6A41-399C89C0C4CD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 3.8637462129508515 400 3.2731397075733413
+	setAttr -s 4 ".ktv[0:3]"  0 3.8637462129508515 400 3.8637462129508515
 		 448 3.2731397075733413 454 3.0233422881516412;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  1 0.93678639853222856 1;
+	setAttr -s 4 ".kiy[1:3]"  0 -0.34990176267777867 0;
+	setAttr -s 4 ".kox[1:3]"  1 0.93678639853222856 1;
+	setAttr -s 4 ".koy[1:3]"  0 -0.34990176267777867 0;
 createNode animCurveTU -n "R_Arm_Wrist_IK_CTRL_scaleX";
 	rename -uid "CFB0761B-47E2-D333-EDB6-409BE3408948";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr -s 3 ".kit[1:2]"  1 18;
+	setAttr -s 3 ".kot[1:2]"  1 18;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
+	setAttr -s 3 ".kox[1:2]"  1 1;
+	setAttr -s 3 ".koy[1:2]"  0 0;
 createNode animCurveTU -n "R_Arm_Wrist_IK_CTRL_scaleY";
 	rename -uid "FE778EBE-4063-7BDF-1EF8-9B9B07720D48";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr -s 3 ".kit[1:2]"  1 18;
+	setAttr -s 3 ".kot[1:2]"  1 18;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
+	setAttr -s 3 ".kox[1:2]"  1 1;
+	setAttr -s 3 ".koy[1:2]"  0 0;
 createNode animCurveTU -n "R_Arm_Wrist_IK_CTRL_scaleZ";
 	rename -uid "A8634262-43AB-EA4C-6345-52A3287F8CD6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr -s 3 ".kit[1:2]"  1 18;
+	setAttr -s 3 ".kot[1:2]"  1 18;
+	setAttr -s 3 ".kix[1:2]"  1 1;
+	setAttr -s 3 ".kiy[1:2]"  0 0;
+	setAttr -s 3 ".kox[1:2]"  1 1;
+	setAttr -s 3 ".koy[1:2]"  0 0;
 createNode animCurveTA -n "R_Pinky_3_CTRL_rotateX";
 	rename -uid "82369867-41A4-2D4E-1EFA-B384866D9AF4";
 	setAttr ".tan" 18;
@@ -6232,59 +6287,53 @@ createNode animCurveTU -n "L_Arm_Wrist_IK_CTRL_visibility";
 	rename -uid "785E2967-4F21-D003-17F4-E6A3248AAB63";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr ".ktv[0]"  0 1;
+	setAttr ".kot[0]"  5;
 createNode animCurveTL -n "L_Arm_Wrist_IK_CTRL_translateX";
 	rename -uid "38226CBD-4F02-8A85-C42A-9B98A79B5695";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 -0.94303044965585991 400 -0.94303044965585991
-		 448 -0.94303044965585991 453 -0.84662472031376501;
+	setAttr ".ktv[0]"  0 0.60579897064757959;
 createNode animCurveTL -n "L_Arm_Wrist_IK_CTRL_translateY";
 	rename -uid "6A8F0C7E-4FE2-BE1E-82BC-C98632F7081B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0.93637411008227101 400 0.93637411008227101
-		 448 0.93637411008227101 453 1.5665373442396335;
+	setAttr ".ktv[0]"  0 1.1508643352783472;
 createNode animCurveTL -n "L_Arm_Wrist_IK_CTRL_translateZ";
 	rename -uid "247D941B-41AA-7BE1-1FAD-80A43087EF46";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 -1.2539729984931973 400 -1.2539729984931973
-		 448 -1.2539729984931973 453 -1.9317049087071752;
+	setAttr ".ktv[0]"  0 -1.9272398712894787;
 createNode animCurveTA -n "L_Arm_Wrist_IK_CTRL_rotateX";
 	rename -uid "AE5A39E7-4F6E-DE57-3BD7-E8A42A9FA17F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 19.351252940422743 400 19.351252940422743
-		 448 19.351252940422743 453 28.872430614621067;
+	setAttr ".ktv[0]"  0 19.351252940422743;
 createNode animCurveTA -n "L_Arm_Wrist_IK_CTRL_rotateY";
 	rename -uid "D81C8ECF-405A-A03B-E358-2CB4FED63502";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 18.089381438658656 400 18.089381438658656
-		 448 18.089381438658656 453 21.3010894295574;
+	setAttr ".ktv[0]"  0 18.089381438658656;
 createNode animCurveTA -n "L_Arm_Wrist_IK_CTRL_rotateZ";
 	rename -uid "41F332CC-48B7-D470-406B-7FB11C00E980";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 -19.656524697495868 400 -19.656524697495868
-		 448 -19.656524697495868 453 -18.219720019790056;
+	setAttr ".ktv[0]"  0 -19.656524697495868;
 createNode animCurveTU -n "L_Arm_Wrist_IK_CTRL_scaleX";
 	rename -uid "4F6AB322-40CE-0ABC-4D76-CAB5B84E2706";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr ".ktv[0]"  0 1;
 createNode animCurveTU -n "L_Arm_Wrist_IK_CTRL_scaleY";
 	rename -uid "19BBFD9A-401B-87A7-6524-1781E010DCAE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr ".ktv[0]"  0 1;
 createNode animCurveTU -n "L_Arm_Wrist_IK_CTRL_scaleZ";
 	rename -uid "D657C686-4112-7C35-7592-B3BDB605CDA1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 400 1 448 1;
+	setAttr ".ktv[0]"  0 1;
 createNode animCurveTU -n "L_Clavical_CTRL_visibility";
 	rename -uid "38E9C99E-4833-EB07-8258-97ACF64C9BEB";
 	setAttr ".tan" 9;
@@ -7379,23 +7428,8 @@ createNode reference -n "sharedReferenceNode";
 createNode reference -n "Hospital_RoomRN1";
 	rename -uid "98E14AD9-4249-E5B4-5653-77B35FDF3090";
 	setAttr -s 14 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Hospital_RoomRN1"
-		"Hospital_RoomRN1" 0
 		"Hospital_RoomRN1" 27
 		2 "|Hospital_Room:HospitalRoom|Hospital_Room:Walls" "visibility" " 0"
 		2 "|Hospital_Room:HospitalRoom|Hospital_Room:Ceiling" "visibility" " 0"
@@ -8332,7 +8366,8 @@ createNode animCurveTA -n "Face_CNTL_Master_rotateY";
 	rename -uid "9769D5C2-43B7-F901-2AD6-F5AD2874EB7C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  400 74.999999999999972 448 74.999999999999972;
+	setAttr -s 3 ".ktv[0:2]"  0 81.262114276125175 400 74.999999999999972
+		 448 74.999999999999972;
 createNode animCurveTA -n "Face_CNTL_Master_rotateZ";
 	rename -uid "870AD30C-43D3-072D-6494-C2B2E85E2CCB";
 	setAttr ".tan" 18;
@@ -8615,7 +8650,8 @@ createNode animCurveTL -n "Face_CNTL_Master_translateX";
 	rename -uid "8976A762-498B-B92F-CEC3-1C925B046A9E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  400 -190.41309572950792 448 -190.41309572950792;
+	setAttr -s 3 ".ktv[0:2]"  0 -182.47519249142263 400 -190.41309572950792
+		 448 -190.41309572950792;
 createNode animCurveTL -n "Face_CNTL_Master_translateY";
 	rename -uid "C057FB44-4354-8105-2BD3-10BD40DA415D";
 	setAttr ".tan" 18;
@@ -9833,12 +9869,6 @@ createNode animCurveTU -n "L_Arm_Hand_IK_CTRL_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  400 1 448 1;
-createNode animCurveTU -n "L_Arm_Wrist_IK_CTRL_Fallow";
-	rename -uid "66FF89F0-4584-C47F-2E0A-C3ADD83D71D9";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  400 0 448 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTU -n "L_Arm_1_IK_CTRL_visibility";
 	rename -uid "77AD9348-4A11-5FCA-6085-A4A724AB099A";
 	setAttr ".tan" 9;
@@ -11098,7 +11128,7 @@ createNode animCurveTA -n "R_Leg_Ankle_IK_CTRL_rotateY";
 	rename -uid "1FE79070-4368-923D-8482-1194A4EA16FA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  448 21.77553085643726 449 21.77553085643726;
+	setAttr -s 2 ".ktv[0:1]"  448 21.775530856437264 449 21.775530856437264;
 createNode animCurveTA -n "R_Leg_Ankle_IK_CTRL_rotateZ";
 	rename -uid "70D4BEDD-4C69-96A5-ED3D-A18787E14F63";
 	setAttr ".tan" 18;
@@ -11393,13 +11423,43 @@ createNode animCurveTU -n "IVstand_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  448 1;
+createNode reference -n "Hospital_RoomRN2";
+	rename -uid "38010069-45F4-FFDF-5B93-EE8826A7677A";
+	setAttr -s 6 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Hospital_RoomRN2"
+		"Hospital_RoomRN2" 0
+		"Hospital_RoomRN2" 6
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Floor.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[1]" ""
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Walls.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[2]" ""
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Furniture|Hospital_Room:IVstand.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[3]" ""
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Furniture|Hospital_Room:Bed|Hospital_Room:Bed.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[4]" ""
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Furniture|Hospital_Room:Bed|Hospital_Room:Mattress.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[5]" ""
+		5 4 "Hospital_RoomRN2" "|Hospital_Room:HospitalRoom|Hospital_Room:Furniture|Hospital_Room:Bed|Hospital_Room:Blanket.drawOverride" 
+		"Hospital_RoomRN2.placeHolderList[6]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode displayLayer -n "Walls";
+	rename -uid "0E12250A-4AB2-E4D3-B844-E5A5C9CD0616";
+	setAttr ".v" no;
+	setAttr ".do" 4;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 473;
-	setAttr ".unw" 473;
+	setAttr -k on ".o" 0;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -11646,12 +11706,12 @@ connectAttr "pairBlend3.otz" "White_Trans_Man_cleanedUP_V2RN.phl[321]";
 connectAttr "pairBlend3.orx" "White_Trans_Man_cleanedUP_V2RN.phl[322]";
 connectAttr "pairBlend3.ory" "White_Trans_Man_cleanedUP_V2RN.phl[323]";
 connectAttr "pairBlend3.orz" "White_Trans_Man_cleanedUP_V2RN.phl[324]";
-connectAttr "Upper_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[325]";
-connectAttr "Upper_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[326]";
-connectAttr "Upper_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[327]";
-connectAttr "Upper_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[328]";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[329]" "pairBlend3.w";
-connectAttr "Upper_blendParent1.o" "White_Trans_Man_cleanedUP_V2RN.phl[330]";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[325]" "pairBlend3.w";
+connectAttr "Upper_blendParent1.o" "White_Trans_Man_cleanedUP_V2RN.phl[326]";
+connectAttr "Upper_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[327]";
+connectAttr "Upper_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[328]";
+connectAttr "Upper_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[329]";
+connectAttr "Upper_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[330]";
 connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[331]" "pairBlend3.itx2";
 connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[332]" "pairBlend3.ity2";
 connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[333]" "pairBlend3.itz2";
@@ -12880,12 +12940,12 @@ connectAttr "L_Foot_2_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1063]";
 connectAttr "L_Foot_2_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1064]";
 connectAttr "L_Foot_2_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1065]"
 		;
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1066]" "pairBlend2.irx2";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1067]" "pairBlend2.irz2";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1068]" "pairBlend2.iry2";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1069]" "pairBlend2.itx2";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1070]" "pairBlend2.ity2";
-connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1071]" "pairBlend2.itz2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1066]" "pairBlend2.itx2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1067]" "pairBlend2.ity2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1068]" "pairBlend2.itz2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1069]" "pairBlend2.irx2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1070]" "pairBlend2.irz2";
+connectAttr "White_Trans_Man_cleanedUP_V2RN.phl[1071]" "pairBlend2.iry2";
 connectAttr "Eyes_CTRL_Fallow.o" "White_Trans_Man_cleanedUP_V2RN.phl[1072]";
 connectAttr "pairBlend1.otx" "White_Trans_Man_cleanedUP_V2RN.phl[1073]";
 connectAttr "pairBlend1.oty" "White_Trans_Man_cleanedUP_V2RN.phl[1074]";
@@ -13066,141 +13126,131 @@ connectAttr "L_Arm_PV_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1171]"
 connectAttr "L_Arm_PV_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1172]";
 connectAttr "L_Arm_PV_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1173]";
 connectAttr "L_Arm_PV_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1174]";
-connectAttr "L_Arm_Wrist_IK_CTRL_Fallow.o" "White_Trans_Man_cleanedUP_V2RN.phl[1175]"
+connectAttr "L_Arm_Wrist_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1175]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1176]"
+connectAttr "L_Arm_Wrist_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1176]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1177]"
+connectAttr "L_Arm_Wrist_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1177]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1178]"
+connectAttr "L_Arm_Wrist_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1178]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1179]"
+connectAttr "L_Arm_Wrist_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1179]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1180]"
+connectAttr "L_Arm_Wrist_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1180]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1181]"
+connectAttr "L_Arm_Wrist_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1181]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1182]"
+connectAttr "L_Arm_Wrist_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1182]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1183]"
+connectAttr "L_Arm_Wrist_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1183]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1184]"
+connectAttr "L_Arm_Wrist_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1184]"
 		;
-connectAttr "L_Arm_Wrist_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1185]"
+connectAttr "L_Arm_Hand_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1185]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1186]"
+connectAttr "L_Arm_Hand_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1186]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1187]"
+connectAttr "L_Arm_Hand_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1187]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1188]"
+connectAttr "L_Arm_Hand_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1188]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1189]"
+connectAttr "L_Arm_Hand_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1189]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1190]"
+connectAttr "L_Arm_Hand_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1190]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1191]"
+connectAttr "L_Arm_Hand_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1191]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1192]"
+connectAttr "L_Arm_Hand_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1192]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1193]"
+connectAttr "L_Arm_Hand_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1193]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1194]"
+connectAttr "L_Arm_Hand_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1194]"
 		;
-connectAttr "L_Arm_Hand_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1195]"
+connectAttr "R_Arm_1_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1195]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1196]"
+connectAttr "R_Arm_1_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1196]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1197]"
+connectAttr "R_Arm_1_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1197]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1198]"
+connectAttr "R_Arm_1_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1198]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1199]"
+connectAttr "R_Arm_1_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1199]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1200]"
+connectAttr "R_Arm_1_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1200]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1201]"
+connectAttr "R_Arm_1_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1201]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1202]"
+connectAttr "R_Arm_1_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1202]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1203]"
+connectAttr "R_Arm_1_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1203]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1204]"
+connectAttr "R_Arm_1_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1204]"
 		;
-connectAttr "R_Arm_1_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1205]"
+connectAttr "R_Arm_PV_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1205]"
 		;
-connectAttr "R_Arm_PV_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1206]"
+connectAttr "R_Arm_PV_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1206]"
 		;
-connectAttr "R_Arm_PV_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1207]"
+connectAttr "R_Arm_PV_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1207]"
 		;
-connectAttr "R_Arm_PV_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1208]"
+connectAttr "R_Arm_PV_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1208]"
 		;
-connectAttr "R_Arm_PV_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1209]"
+connectAttr "R_Arm_PV_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1209]"
 		;
-connectAttr "R_Arm_PV_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1210]"
+connectAttr "R_Arm_PV_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1210]"
 		;
-connectAttr "R_Arm_PV_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1211]"
+connectAttr "R_Arm_PV_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1211]"
 		;
-connectAttr "R_Arm_PV_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1212]"
+connectAttr "R_Arm_PV_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1212]";
+connectAttr "R_Arm_PV_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1213]";
+connectAttr "R_Arm_PV_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1214]";
+connectAttr "R_Arm_Wrist_IK_CTRL_Fallow.o" "White_Trans_Man_cleanedUP_V2RN.phl[1215]"
 		;
-connectAttr "R_Arm_PV_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1213]";
-connectAttr "R_Arm_PV_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1214]";
-connectAttr "R_Arm_PV_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1215]";
-connectAttr "R_Arm_Wrist_IK_CTRL_Fallow.o" "White_Trans_Man_cleanedUP_V2RN.phl[1216]"
+connectAttr "R_Arm_Wrist_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1216]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1217]"
+connectAttr "R_Arm_Wrist_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1217]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1218]"
+connectAttr "R_Arm_Wrist_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1218]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1219]"
+connectAttr "R_Arm_Wrist_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1219]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1220]"
+connectAttr "R_Arm_Wrist_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1220]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1221]"
+connectAttr "R_Arm_Wrist_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1221]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1222]"
+connectAttr "R_Arm_Wrist_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1222]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1223]"
+connectAttr "R_Arm_Wrist_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1223]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1224]"
+connectAttr "R_Arm_Wrist_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1224]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1225]"
+connectAttr "R_Arm_Wrist_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1225]"
 		;
-connectAttr "R_Arm_Wrist_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1226]"
+connectAttr "R_Arm_Hand_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1226]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_rotateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1227]"
+connectAttr "R_Arm_Hand_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1227]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_rotateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1228]"
+connectAttr "R_Arm_Hand_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1228]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_rotateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1229]"
+connectAttr "R_Arm_Hand_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1229]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_translateX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1230]"
+connectAttr "R_Arm_Hand_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1230]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_translateY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1231]"
+connectAttr "R_Arm_Hand_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1231]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_translateZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1232]"
+connectAttr "R_Arm_Hand_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1232]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_scaleX.o" "White_Trans_Man_cleanedUP_V2RN.phl[1233]"
+connectAttr "R_Arm_Hand_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1233]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_scaleY.o" "White_Trans_Man_cleanedUP_V2RN.phl[1234]"
+connectAttr "R_Arm_Hand_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1234]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_scaleZ.o" "White_Trans_Man_cleanedUP_V2RN.phl[1235]"
+connectAttr "R_Arm_Hand_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1235]"
 		;
-connectAttr "R_Arm_Hand_IK_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V2RN.phl[1236]"
-		;
-connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[1]";
-connectAttr "IVstand_translateX.o" "Hospital_RoomRN1.phl[2]";
-connectAttr "IVstand_translateY.o" "Hospital_RoomRN1.phl[3]";
-connectAttr "IVstand_translateZ.o" "Hospital_RoomRN1.phl[4]";
-connectAttr "IVstand_visibility.o" "Hospital_RoomRN1.phl[5]";
-connectAttr "IVstand_rotateX.o" "Hospital_RoomRN1.phl[6]";
-connectAttr "IVstand_rotateY.o" "Hospital_RoomRN1.phl[7]";
-connectAttr "IVstand_rotateZ.o" "Hospital_RoomRN1.phl[8]";
-connectAttr "IVstand_scaleX.o" "Hospital_RoomRN1.phl[9]";
-connectAttr "IVstand_scaleY.o" "Hospital_RoomRN1.phl[10]";
-connectAttr "IVstand_scaleZ.o" "Hospital_RoomRN1.phl[11]";
-connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[12]";
-connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[13]";
-connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[14]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN2.phl[1]";
+connectAttr "Walls.di" "Hospital_RoomRN2.phl[2]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN2.phl[3]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN2.phl[4]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN2.phl[5]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN2.phl[6]";
 connectAttr "White_Trans_Man_cleanedUP_V3:Control_Layer.di" "White_Trans_Man_cleanedUP_V3:Controls.do"
 		;
 connectAttr "pasted__Transform_CTRL_visibility.o" "White_Trans_Man_cleanedUP_V3:Transform_CTRL.v"
@@ -13433,6 +13483,20 @@ connectAttr "pairBlend1_inTranslateZ1.o" "pairBlend1.itz1";
 connectAttr "pairBlend1_inRotateX1.o" "pairBlend1.irx1";
 connectAttr "pairBlend1_inRotateY1.o" "pairBlend1.iry1";
 connectAttr "pairBlend1_inRotateZ1.o" "pairBlend1.irz1";
+connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[1]";
+connectAttr "IVstand_translateX.o" "Hospital_RoomRN1.phl[2]";
+connectAttr "IVstand_translateY.o" "Hospital_RoomRN1.phl[3]";
+connectAttr "IVstand_translateZ.o" "Hospital_RoomRN1.phl[4]";
+connectAttr "IVstand_visibility.o" "Hospital_RoomRN1.phl[5]";
+connectAttr "IVstand_rotateX.o" "Hospital_RoomRN1.phl[6]";
+connectAttr "IVstand_rotateY.o" "Hospital_RoomRN1.phl[7]";
+connectAttr "IVstand_rotateZ.o" "Hospital_RoomRN1.phl[8]";
+connectAttr "IVstand_scaleX.o" "Hospital_RoomRN1.phl[9]";
+connectAttr "IVstand_scaleY.o" "Hospital_RoomRN1.phl[10]";
+connectAttr "IVstand_scaleZ.o" "Hospital_RoomRN1.phl[11]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[12]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[13]";
+connectAttr "Room_Geo.di" "Hospital_RoomRN1.phl[14]";
 connectAttr "pairBlend2_inRotateX1.o" "pairBlend2.irx1";
 connectAttr "pairBlend2_inRotateY1.o" "pairBlend2.iry1";
 connectAttr "pairBlend2_inRotateZ1.o" "pairBlend2.irz1";
@@ -13447,6 +13511,7 @@ connectAttr "pairBlend3_inTranslateZ1.o" "pairBlend3.itz1";
 connectAttr "pairBlend3_inRotateX1.o" "pairBlend3.irx1";
 connectAttr "pairBlend3_inRotateY1.o" "pairBlend3.iry1";
 connectAttr "pairBlend3_inRotateZ1.o" "pairBlend3.irz1";
+connectAttr "layerManager.dli[4]" "Walls.id";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "Eyes.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
