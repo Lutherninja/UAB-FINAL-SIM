@@ -16,7 +16,7 @@ public class VIDEUIManager1 : MonoBehaviour
     public Text NPC_Text;
     public GameObject playerChoicePrefab;
 
-    public Choice_Events_SCript choiceEvents;
+    public Choice_Events_Script choiceEvents;
     public float buttonSeperation = 20, buttonScale = 1;
     public GameObject dialogueCanvas;
 
@@ -35,7 +35,7 @@ public class VIDEUIManager1 : MonoBehaviour
         VD.LoadState("VIDEDEMOScene1", true);
     }
 
-    public void SetChoices(Choice_Events_SCript newEvents)
+    public void SetChoices(Choice_Events_Script newEvents)
     {
         choiceEvents = newEvents;
     }

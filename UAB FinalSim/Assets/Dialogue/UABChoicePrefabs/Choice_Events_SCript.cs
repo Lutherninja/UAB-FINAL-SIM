@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Choice_Events_SCript : MonoBehaviour
+public class Choice_Events_Script : MonoBehaviour
 {
     public List<UnityEvent> choiceEvents;
 
-    public void SetChoices(Choice_Events_SCript events)
+    public void SetChoices(Choice_Events_Script events)
     {
         choiceEvents = events.choiceEvents;
     }
