@@ -9,14 +9,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Dialogue/UABChoicePrefabs/UnityEventScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dialogue/UABChoicePrefabs/Choice_Events_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dialogue/UABChoicePrefabs/VIDEUIManager1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RealTimePasser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfectionChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VRTK/Source/Scripts/Utilities/VRTK_PolicyList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeSkip.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Dialogue/UABChoicePrefabs/Choice_Events_Script.cs" />
         <option value="$PROJECT_DIR$/Assets/Dialogue/UABChoicePrefabs/VIDEUIManager1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimeSkip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InfectionChanger.cs" />
       </list>
     </option>
   </component>

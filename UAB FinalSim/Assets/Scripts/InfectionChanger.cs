@@ -6,8 +6,8 @@ public class InfectionChanger : MonoBehaviour
     public InfectionObject MyInfection;
     public TimeObject InGameTime;
     public float SecondsAtCure;
-    public float HealSubtract;
-    public float ModifiedCureSecond;
+    private float HealSubtract;
+    private float ModifiedCureSecond;
     private float e, exponent;
     public bool BeenCured;
 
