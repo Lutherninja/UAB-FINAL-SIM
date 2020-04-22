@@ -752,6 +752,7 @@
           <e p="Scripts" t="Include">
             <e p="ChartFiller.cs" t="Include" />
             <e p="ChartSwitch.cs" t="Include" />
+            <e p="DialogueSwitch.cs" t="Include" />
             <e p="FinalScoreFiller.cs" t="Include" />
             <e p="FullScreenSprite.cs" t="Include" />
             <e p="GameEnder.cs" t="Include" />
@@ -775,7 +776,6 @@
           <e p="CodeSepsisButton.cs" t="Include" />
           <e p="CureSepsis.cs" t="Include" />
           <e p="DialogueStopper.cs" t="Include" />
-          <e p="DialogueSwitch.cs" t="Include" />
           <e p="DisplayScripts" t="Include">
             <e p="HTCSetter.cs" t="Include" />
             <e p="InfectionSetter.cs" t="Include" />

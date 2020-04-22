@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PatientAction : MonoBehaviour
 {
@@ -12,11 +11,13 @@ public class PatientAction : MonoBehaviour
     }
     
    public void ShowLeg()
-    {
-        animator.SetTrigger("Show Leg");
-        Wait();
-        animator.SetTrigger("ShowReturn");
+    { 
+        animator.SetBool("Show Leg", true);
     }
+   public void DoneShowing()
+   { 
+       animator.SetBool("Show Leg", false);
+   }
     
     public void Eat()
     {
@@ -25,12 +26,11 @@ public class PatientAction : MonoBehaviour
     
     public void Talk()
     {
-        animator.SetTrigger("Talking");
-        Wait();
-        animator.SetTrigger("DoneTalking");
+        animator.SetBool("Talking", true);
     }
-    private static IEnumerator Wait()
+    
+    public void StopTalk()
     {
-        yield return new WaitForSeconds(5);
+        animator.SetBool("Talking", false);
     }
 }

@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6486537548820011143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106119140899195601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05e6956661609a468050f49abc55c7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scenes:
+  - {fileID: 0}
+  - {fileID: 0}
+  Screen2: {fileID: 11400000, guid: 101d89a39ff19ad4cb331e85761e9fb1, type: 2}
+  Screen3: {fileID: 11400000, guid: 373e44488c6cb9548a101598ad843602, type: 2}
+  CalledPhysician: {fileID: 11400000, guid: 281d0223fd7af2445a1450d41e9ebbe2, type: 2}
+  GameComplete: {fileID: 11400000, guid: 1a29b2699f91326468b62de30ee9dad3, type: 2}
+  PerformedSepsis: {fileID: 11400000, guid: b7f6b9126e7de804a82fcc851c27405e, type: 2}
+  AssessedLeg: {fileID: 11400000, guid: 14072b979c60d2644b8dce30d7051893, type: 2}
+  PatientModel: {fileID: 0}
+  PatientAnimator: {fileID: 0}
 --- !u!1 &781283905677567839
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,8 +5914,44 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08565393
       objectReference: {fileID: 0}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6486537548820011143}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Call
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555373430507971143, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+        type: 3}
+      propertyPath: OnUse.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d7ee433f2ae124d8f6ec55648b79b9, type: 3}
+--- !u!1 &106119140899195601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5542846359542099323, guid: b2d7ee433f2ae124d8f6ec55648b79b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5590418142610876330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8115094064516948759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4398816857148196029, guid: b2d7ee433f2ae124d8f6ec55648b79b9,

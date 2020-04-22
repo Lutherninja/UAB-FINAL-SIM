@@ -10,8 +10,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/PaperPrototype/Scripts/PatientAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PaperPrototype/Scripts/Resetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BringWaterButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PaperPrototype/Scripts/PatientSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InGameTimePasser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfectionChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CodeMETButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VRTK/Source/Scripts/Utilities/VRTK_PolicyList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -19,8 +21,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChartChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PaperPrototype/Scripts/GameEnder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeSkip.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueSwitch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RealTimePasser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeResetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AdministerMedsButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueStopper.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -32,10 +34,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TimeSkip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InfectionChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/PaperPrototype/Scripts/GameEnder.cs" />
-        <option value="$PROJECT_DIR$/Assets/PaperPrototype/Scripts/PatientAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BringWaterButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdministerMedsButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BringWaterButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InGameTimePasser.cs" />
+        <option value="$PROJECT_DIR$/Assets/PaperPrototype/Scripts/PatientAction.cs" />
         <option value="$PROJECT_DIR$/Assets/PaperPrototype/Scripts/PatientSwitch.cs" />
       </list>
     </option>
