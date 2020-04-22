@@ -754,6 +754,8 @@
             <e p="ChartSwitch.cs" t="Include" />
             <e p="FinalScoreFiller.cs" t="Include" />
             <e p="FullScreenSprite.cs" t="Include" />
+            <e p="GameEnder.cs" t="Include" />
+            <e p="PatientAction.cs" t="Include" />
             <e p="PatientSwitch.cs" t="Include" />
             <e p="Resetter.cs" t="Include" />
             <e p="TimeFiller.cs" t="Include" />

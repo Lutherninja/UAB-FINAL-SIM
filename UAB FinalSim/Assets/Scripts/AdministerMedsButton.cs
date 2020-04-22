@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class AdministerMedsButton : MonoBehaviour
@@ -6,6 +7,7 @@ public class AdministerMedsButton : MonoBehaviour
 
     public SOBool Screen2, Screen3, PerformedSepsis, GaveMeds1, GaveMeds2, WantedMeds1;
     public Text InfoText;
+    public UnityEvent PatientTakeMeds;
 
     public void Call()
     {
@@ -15,6 +17,7 @@ public class AdministerMedsButton : MonoBehaviour
             {
                 InfoText.text = "You gave the patient 5 mg Amlodipine";
                 GaveMeds1.Value = true;
+                PatientTakeMeds.Invoke();
             }
             else
             {
@@ -27,9 +30,11 @@ public class AdministerMedsButton : MonoBehaviour
             {
                 InfoText.text = "You gave the patient 500mg Tylenol";
                 GaveMeds2.Value = true;
+                PatientTakeMeds.Invoke();
                 if (!GaveMeds2)
                 {
                     GaveMeds2.Value = true;
+                    PatientTakeMeds.Invoke();
                 }
             }
             else

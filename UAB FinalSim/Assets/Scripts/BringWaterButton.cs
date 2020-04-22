@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BringWaterButton : MonoBehaviour
@@ -6,6 +7,7 @@ public class BringWaterButton : MonoBehaviour
 
     public SOBool Screen2, Screen3, PerformedSepsis, WantedWater1, WantedWater2, GaveWater1, GaveWater2;
     public Text InfoText;
+    public UnityEvent patientDrink;
 
     public void Call()
     {
@@ -19,6 +21,7 @@ public class BringWaterButton : MonoBehaviour
             {
                 InfoText.text = "You gave the patient a glass of water";
                 GaveWater1.Value = true;
+                patientDrink.Invoke();
             }
             else
             {
@@ -43,6 +46,7 @@ public class BringWaterButton : MonoBehaviour
             {
                 InfoText.text = "You gave the patient a glass of water";
                 GaveWater2.Value = true;
+                patientDrink.Invoke();
             }
             else
             {
